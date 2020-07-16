@@ -3,13 +3,23 @@
 #   # Add your solution here
 # end
 
+# def find_element_index(array, value_to_find)
+#   counter=0
+#   while counter<array.length do
+#     if array[counter] == value_to_find
+#       found_value_index=counter
+#     end
+#     counter+=1
+#   end
+#     found_value_index
+# end
+
 def find_element_index(array, value_to_find)
   counter=0
   while counter<array.length do
-    if array[counter] == value_to_find
-      found_value_index=counter
+    if value_to_find == array[counter]
+      return counter
     end
     counter+=1
   end
-    found_value_index
 end
